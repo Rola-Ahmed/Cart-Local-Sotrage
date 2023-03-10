@@ -61,25 +61,25 @@ let products = [
       "Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a t'ype specimen book.  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
   },
 ];
+// created an aray of object that contains the products that will be added to cart only
 let productList = [];
 
+// created localstorage for all the product
 localStorage.setItem("AllProducts", JSON.stringify(products));
 
+// checking if the localstorage is empty or no
 if (localStorage.getItem(" Products ") !== null) {
   productList = JSON.parse(localStorage.getItem(" Products "));
 }
 
-console.log(productList.length);
-console.log(productList);
 //display all my products  on the browser
-
 function diplayProduct() {
   let container = ``;
   let value = "Add to Cart";
   let classname = "addToCart";
-  for (let i = 0; i < products.length; i++) {
-    if (productList.find((item) => item.id - 1 == products[i].id - 1)) {
-      console.log("display-remove", products[i].id);
+  for (const element of products) {
+    if (productList.find((item) => item.id - 1 == element.id - 1)) {
+      console.log("display-remove", element.id);
       value = "Remove from Cart";
       classname = "danger";
     }
@@ -87,15 +87,15 @@ function diplayProduct() {
       <img
         id="product_image"
         name="product_image"
-        src="${products[i].product_image}"
-        alt="${products[i].product_name}"
+        src="${element.product_image}"
+        alt="${element.product_name}"
       />
-      <h3 id="product_name">${products[i].product_name}</h3>
-      <h4 id="product_price">${products[i].product_price} EGY</h4>
+      <h3 id="product_name">${element.product_name}</h3>
+      <h4 id="product_price">${element.product_price} EGY</h4>
       
-      <button   onclick='addToCart(${products[i].id})'  id="addToCart" class='addToCart ${classname}' type="submit">${value}</button>
+      <button   onclick='addToCart(${element.id})'  id="addToCart" class='addToCart ${classname}' type="submit">${value}</button>
   
-      <button  onclick='ViewMore(${products[i].id})'id="quick_view" type="submit">Quick View</button>
+      <button  onclick='ViewMore(${element.id})'id="quick_view" type="submit">Quick View</button>
      
     </div>`;
     value = "Add to Cart";
@@ -106,15 +106,12 @@ function diplayProduct() {
 }
 diplayProduct();
 
-// let addToCartBtn = document.getElementById("addToCart");
+//select all the buttons that addes the prodcut to the cart
 let addToCartBtn = document.querySelectorAll(".addToCart");
-// console.log(addToCartBtn);
 
+//when the user adds or removes a prodact,
 function addToCart(index) {
   let addToCartBtn = document.querySelectorAll(".addToCart")[index - 1];
-
-  // console.log("addToCartBtn in the function ", addToCartBtn);
-  // console.log(addToCartBtn.innerHTML);
 
   if (addToCartBtn.innerHTML === "Add to Cart") {
     productList.push(products[index - 1]);
@@ -137,21 +134,17 @@ function addToCart(index) {
   }
   console.log(productList);
   console.log(productList[index - 1]);
-  // console.log(productList[index].id);
   localStorage.setItem(" Products ", JSON.stringify(productList));
   SavedProduct_LocalStorage();
 }
 
+///when the user adds or removes a prodact, the cart should update in the cart and localstorage
 function SavedProduct_LocalStorage() {
   let counter = document
     .querySelector(".fa-stack.fa-2x.has-badge")
     // .getAttribute("data-count");
 
     .setAttribute("data-count", productList.length);
-  // console.log(counter);
-  // counter = productList.length;
-  // console.log(counter);
-  // counter.value = productList.length;
   let containers = ``;
   console.log("productList", productList.length);
   console.log("productList", productList);
@@ -176,20 +169,12 @@ function SavedProduct_LocalStorage() {
       
     </div>`;
   }
-  //${element.product_image},${element.product_name},${element.product_price},${element.product_description}
 
   document.getElementById("dropdownContent").innerHTML = containers;
-  // console.log("containers", containers);
 }
 SavedProduct_LocalStorage();
 
-function isEmpty(obj) {
-  for (var prop in obj) {
-    if (obj.hasOwnProperty(prop)) return false; //hass property
-  }
-  return true;
-}
-
+//when the user clicks on view more the product will open in a new tab with more detials
 function ViewMore(id, image) {
   window.open("quickmore.html?productid=" + id); ///, self
 }
