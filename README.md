@@ -21,10 +21,6 @@
   5- The cart icon should have an indicator to the number of added_to_cart products
 
   6- CreateD a quick_view modal which is opened whenever the user clicks on the quick_view button of any product
-## Link to the Project
-   https://github.com/Rola-Ahmed/Cart-Local-Sotrage
-## Link to the output 
-   https://rola-ahmed.github.io/Cart-Local-Sotrage/
 
   7- The quick_view modal has the same details displayed in the product card
 
@@ -33,5 +29,10 @@
   9- If the product is added_to_cart, the "add to cart" button should be converted to "remove from cart"
 
   10- I am only allowed to use HTML, CSS and JavaScript, but you can't use jQuery, Bootstrap, Fontawesome (y use icons but  don't attach a whole library of icons), Google Fonts ( just download and use any single font)
+  
+## Link to the Project
+   https://github.com/Rola-Ahmed/Cart-Local-Sotrage
+## Link to the output 
+   https://rola-ahmed.github.io/Cart-Local-Sotrage/  
 
   
