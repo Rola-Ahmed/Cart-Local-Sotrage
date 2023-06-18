@@ -4,7 +4,7 @@ let products = [
     id: 1,
     product_name: "HP Core I5",
     product_price: 500,
-    product_image: "../../assets/images/1-air_pods_2.jpg",
+    product_image: "https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNtYXJ0JTIwZGV2aWNlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
     product_description:
       "Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classica",
   },
@@ -12,7 +12,7 @@ let products = [
     id: 2,
     product_name: "Apple",
     product_price: 2000,
-    product_image: "../../assets/images/2-air_pods_1.jpg",
+    product_image: "https://images.unsplash.com/photo-1598516802414-50a01bee818d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
     product_description:
       "Is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
   },
@@ -20,7 +20,7 @@ let products = [
     id: 3,
     product_name: "HP Core I7",
     product_price: 1500,
-    product_image: "../../assets/images/3-camera_1.jpg",
+    product_image: "https://images.unsplash.com/photo-1469964117921-4b137ced3d4c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
     product_description:
       "Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classica",
   },
@@ -28,7 +28,8 @@ let products = [
     id: 4,
     product_name: "Dell",
     product_price: 1800,
-    product_image: "../../assets/images/4-air_pods_3.jpg",
+    //product_image: "../../assets/images/4-air_pods_3.jpg",
+      product_image: "https://images.unsplash.com/photo-1587826154528-f1adec0a4653?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=805&q=80",
     product_description:
       "t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
   },
@@ -36,7 +37,7 @@ let products = [
     id: 5,
     product_name: "Dell Version 5",
     product_price: 1200,
-    product_image: "../../assets/images/5-mobile_stand_1.jpg",
+    product_image: "https://plus.unsplash.com/premium_photo-1682434334280-74509045a102?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80",
     product_description:
       "Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a t'ype specimen book.  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
   },
