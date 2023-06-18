@@ -3,9 +3,13 @@
 ##creating a page with the following details:-
 
    1- Created an array of objects (containing 6 objects) where each object represents a product with the following properties:-
+   
         - product_name (string, ex: "Gold Coin")
+   
         - product_price (string, ex: "112.55")
+        
         - product_image (string, ex: "gold-coin.png")
+        
         - added_to_cart (boolean, ex: false)
 
   2- Created a page where there are 6 product cards displayed with all their details
