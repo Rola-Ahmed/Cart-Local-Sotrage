@@ -21,6 +21,10 @@
   5- The cart icon should have an indicator to the number of added_to_cart products
 
   6- CreateD a quick_view modal which is opened whenever the user clicks on the quick_view button of any product
+## Link to the Project
+   https://github.com/Rola-Ahmed/Cart-Local-Sotrage
+## Link to the output 
+   https://rola-ahmed.github.io/Cart-Local-Sotrage/
 
   7- The quick_view modal has the same details displayed in the product card
 
