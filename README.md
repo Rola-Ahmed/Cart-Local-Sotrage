@@ -1,6 +1,6 @@
 # Cart-Local-Sotrage
 
-##creating a page with the following details:-
+## creating a page with the following details:-
 
    1- Created an array of objects (containing 6 objects) where each object represents a product with the following properties:-
    
